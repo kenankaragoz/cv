@@ -2002,3 +2002,27 @@ a {
         right: 10px;
     }
 }
+
+/* Kemerli Portre */
+.arch-portrait {
+    position: relative;
+    width: min(290px, 100%);
+    aspect-ratio: 3 / 4;
+    border-radius: 160px 160px 12px 12px;
+    overflow: hidden;
+    border: 1px solid var(--line-strong);
+    background-color: var(--bg-panel);
+    animation: archReveal 1.1s var(--ease) 0.15s both;
+}
+
+@keyframes archReveal {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 0 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
