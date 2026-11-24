@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenan Karagöz — Yiyecek &amp; İçecek İşletmeciliği</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- İmleç Takip Eden Hafif Işık -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#anasayfa" class="brand">
+                <span class="brand-monogram">KK</span>
+                <span class="brand-text">Kenan Karagöz</span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Ana Menü">
+                <a href="#anasayfa" class="nav-item active">Ana Sayfa</a>
+                <a href="#hakkimda" class="nav-item">Hakkımda</a>
+                <a href="#deneyim" class="nav-item">Deneyim</a>
+                <a href="#egitim" class="nav-item">Eğitim</a>
+                <a href="#sertifikalar" class="nav-item">Sertifikalar</a>
+                <a href="#galeri" class="nav-item">Galeri</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="mailto:kenankrgz4454@gmail.com" class="contact-pill">
+                    <span class="status-dot"></span>
+                    İletişim
+                </a>
+
+                <button class="menu-trigger" id="menuTrigger" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+                    <span class="menu-label">MENÜ</span>
+                    <span class="menu-lines">
+                        <i></i>
+                        <i></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== TAM EKRAN MOBİL MENÜ ===== -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+        <nav class="mobile-nav">
+            <a href="#anasayfa" class="mobile-link"><span>01</span> Ana Sayfa</a>
+            <a href="#hakkimda" class="mobile-link"><span>02</span> Hakkımda</a>
+            <a href="#deneyim" class="mobile-link"><span>03</span> Deneyim</a>
+            <a href="#egitim" class="mobile-link"><span>04</span> Eğitim</a>
+            <a href="#sertifikalar" class="mobile-link"><span>05</span> Sertifikalar</a>
+            <a href="#galeri" class="mobile-link"><span>06</span> Galeri</a>
+        </nav>
+        <div class="mobile-footer">
+            <a href="mailto:kenankrgz4454@gmail.com">kenankrgz4454@gmail.com</a>
+            <a href="tel:+905347350238">+90 534 735 0238</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- ===== 1. BÖLÜM: EDİTORYAL HERO ===== -->
+        <section class="hero" id="anasayfa">
+            <div class="container">
+                <div class="hero-top-meta reveal">
+                    <span>PORTFÖY / 01</span>
+                    <span class="meta-center">GASTRONOMİ &amp; HİZMET SEKTÖRÜ</span>
+                    <span>MUĞLA · TÜRKİYE</span>
+                </div>
+
+                <div class="hero-headline">
+                    <h1 class="display-title">
+                        <span class="line-mask"><span class="line-inner">KENAN</span></span>
+                        <span class="line-mask"><span class="line-inner italic-gold">KARAGÖZ</span></span>
+                    </h1>
+                </div>
+
+                <div class="hero-editorial-grid">
+                    <div class="grid-col col-left reveal">
+                        <p class="eyebrow">Yiyecek &amp; İçecek İşletmeciliği</p>
+                        <p class="lead-text">
+                            3. sınıf işletmecilik öğrencisi olarak gastronomi kültürü,
+                            ekip uyumu ve yüksek misafir memnuniyeti odağında kariyerimi
+                            şekillendiriyorum.
+                        </p>
+                        <div class="cta-group">
+                            <a href="#deneyim" class="gold-btn">
+                                <span>Deneyimleri İncele</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" aria-hidden="true">
+                                    <path d="M7 17L17 7M17 7H8M17 7v9" />
+                                </svg>
+                            </a>
+                            <a href="#hakkimda" class="text-link">Hakkımda →</a>
+                        </div>
+                    </div>
+
+                    <div class="grid-col col-center">
+                        <div class="arch-portrait reveal-clip">
+                            <img src="images/profil.jpeg" alt="Kenan Karagöz" class="arch-img" />
+                            <div class="arch-caption">
+                                <span>MSKÜ · 3. SINIF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-col col-right reveal">
+                        <div class="info-block">
+                            <span class="info-label">EĞİTİM</span>
+                            <strong>Muğla Sıtkı Koçman Üniversitesi</strong>
+                            <small>Lisans · Yiyecek İçecek İşletmeciliği</small>
+                        </div>
+
+                        <div class="info-block">
+                            <span class="info-label">SEKTÖR TECRÜBESİ</span>
+                            <strong>3 İşletme</strong>
+                            <small>Bodrum · Datça · Zincir Restoran</small>
+                        </div>
+
+                        <div class="info-block">
+                            <span class="info-label">DOĞRUDAN İLETİŞİM</span>
+                            <a href="mailto:kenankrgz4454@gmail.com" class="info-link">kenankrgz4454@gmail.com</a>
+                            <a href="tel:+905347350238" class="info-link">+90 534 735 0238</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-marquee" aria-hidden="true">
+                <div class="marquee-track">
+                    <span>YİYECEK &amp; İÇECEK İŞLETMECİLİĞİ</span>
+                    <span class="dot">✦</span>
+                    <span>FIDES RESTAURANT BODRUM</span>
+                    <span class="dot">✦</span>
+                    <span>ADABURNU GÖLMAR BEACH SPA DATÇA</span>
+                    <span class="dot">✦</span>
+                    <span>LITTLE CAESARS PIZZA</span>
+                    <span class="dot">✦</span>
+                    <span>MİSAFİR MEMNUNİYETİ</span>
+                    <span class="dot">✦</span>
+                    <span>YİYECEK &amp; İÇECEK İŞLETMECİLİĞİ</span>
+                    <span class="dot">✦</span>
+                    <span>FIDES RESTAURANT BODRUM</span>
+                    <span class="dot">✦</span>
+                    <span>ADABURNU GÖLMAR BEACH SPA DATÇA</span>
+                    <span class="dot">✦</span>
+                    <span>LITTLE CAESARS PIZZA</span>
+                    <span class="dot">✦</span>
+                    <span>MİSAFİR MEMNUNİYETİ</span>
+                    <span class="dot">✦</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 2. BÖLÜM: HAKKIMDA ===== -->
+        <section class="section about-section" id="hakkimda">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-index">
+                        <span>02</span>
+                        <span class="index-line"></span>
+                        <span>HAKKIMDA</span>
+                    </div>
+                    <h2 class="section-title">
+                        Gastronomi Tutkusu &amp; <span>Hizmet Kültürü</span>
+                    </h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-main reveal">
+                        <blockquote class="about-quote">
+                            “Misafir memnuniyetini ön planda tutuyor, ekip ruhu ve sürekli
+                            gelişimle sektörde iz bırakmayı hedefliyorum.”
+                        </blockquote>
+
+                        <p class="about-paragraph">
+                            Yiyecek ve İçecek İşletmeciliği 3. sınıf öğrencisi olarak,
+                            gastronomi ve hizmet sektöründe kariyerimi geliştirmeyi
+                            amaçlıyorum. İnsanlarla iletişim kurmayı seven, uyumlu ve
+                            sorumluluk sahibi biriyim.
+                        </p>
+                        <p class="about-paragraph">
+                            Çalışma ortamında ekip ruhuna önem veriyor, misafir memnuniyetini
+                            ön planda tutuyor ve yeni deneyimler kazanarak mesleki bilgi ve
+                            becerilerimi geliştirmeye istekli bir şekilde ilerliyorum.
+                        </p>
+
+                        <div class="traits-grid">
+                            <div class="trait-card">
+                                <span class="trait-num">01</span>
+                                <h3>Güçlü İletişim</h3>
+                                <p>Misafir ve ekip içinde samimi, açık ve çözüm odaklı yaklaşım.</p>
+                            </div>
+                            <div class="trait-card">
+                                <span class="trait-num">02</span>
+                                <h3>Ekip Ruhu</h3>
+                                <p>Yoğun servis temposunda uyumlu ve destekleyici çalışma disiplini.</p>
+                            </div>
+                            <div class="trait-card">
+                                <span class="trait-num">03</span>
+                                <h3>Misafir Odağı</h3>
+                                <p>Her detayda yüksek memnuniyet ve özenli hizmet standardı.</p>
+                            </div>
+                            <div class="trait-card">
+                                <span class="trait-num">04</span>
+                                <h3>Sürekli Gelişim</h3>
+                                <p>Yeni deneyimlere açık, sorumluluk alan ve öğrenmeye istekli duruş.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="about-side reveal">
+                        <div class="editorial-panel">
+                            <div class="panel-head">
+                                <span class="panel-kicker">YABANCI DİLLER</span>
+                                <span class="panel-tag">CEFR</span>
+                            </div>
+
+                            <div class="lang-list">
+                                <div class="lang-item">
+                                    <div class="lang-top">
+                                        <span class="lang-name">İngilizce</span>
+                                        <span class="lang-level">A2 · Temel İletişim</span>
+                                    </div>
+                                    <div class="lang-bar">
+                                        <div class="lang-fill" data-width="45%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="lang-item">
+                                    <div class="lang-top">
+                                        <span class="lang-name">Fransızca</span>
+                                        <span class="lang-level">A1 · Başlangıç</span>
+                                    </div>
+                                    <div class="lang-bar">
+                                        <div class="lang-fill" data-width="28%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="editorial-panel">
+                            <div class="panel-head">
+                                <span class="panel-kicker">KİŞİSEL BİLGİLER</span>
+                                <span class="panel-tag">ÖZET</span>
+                            </div>
+
+                            <ul class="dossier-list">
+                                <li>
+                                    <span>Ad Soyad</span>
+                                    <strong>Kenan Karagöz</strong>
+                                </li>
+                                <li>
+                                    <span>Bölüm</span>
+                                    <strong>Yiyecek &amp; İçecek İşletmeciliği</strong>
+                                </li>
+                                <li>
+                                    <span>Seviye</span>
+                                    <strong>Lisans · 3. Sınıf</strong>
+                                </li>
+                                <li>
+                                    <span>E-posta</span>
+                                    <a href="mailto:kenankrgz4454@gmail.com">kenankrgz4454@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span>Telefon</span>
+                                    <a href="tel:+905347350238">+90 534 735 0238</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3. BÖLÜM: İŞ DENEYİMLERİ ===== -->
+        <section class="section experience-section" id="deneyim">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-index">
+                        <span>03</span>
+                        <span class="index-line"></span>
+                        <span>İŞ DENEYİMLERİ</span>
+                    </div>
+                    <h2 class="section-title">
+                        Saha Tecrübesi &amp; <span>Çalıştığım Mekânlar</span>
+                    </h2>
+                    <p class="section-hint">
+                        Mekân fotoğrafı, adresi ve canlı harita konumu için herhangi bir
+                        deneyimin üzerine tıklayın.
+                    </p>
+                </div>
+
+                <div class="exp-list">
+                    <button type="button" class="exp-row reveal" data-exp="fides">
+                        <span class="exp-num">01</span>
+                        <div class="exp-main">
+                            <h3 class="exp-name">Fides Restaurant Bodrum</h3>
+                            <span class="exp-meta">Bitez, Bodrum · Restoran &amp; Beach</span>
+                        </div>
+                        <span class="exp-action">
+                            <span>Fotoğraf &amp; Harita</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.7" aria-hidden="true">
+                                <path d="M7 17L17 7M17 7H8M17 7v9" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button type="button" class="exp-row reveal" data-exp="adaburnu">
+                        <span class="exp-num">02</span>
+                        <div class="exp-main">
+                            <h3 class="exp-name">Adaburnu Gölmar Beach Spa Datça</h3>
+                            <span class="exp-meta">Emecik, Datça · Otel &amp; Tatil Köyü</span>
+                        </div>
+                        <span class="exp-action">
+                            <span>Fotoğraf &amp; Harita</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.7" aria-hidden="true">
+                                <path d="M7 17L17 7M17 7H8M17 7v9" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button type="button" class="exp-row reveal" data-exp="little-caesars">
+                        <span class="exp-num">03</span>
+                        <div class="exp-main">
+                            <h3 class="exp-name">Little Caesars Pizza</h3>
+                            <span class="exp-meta">Muğla · Hızlı Servis &amp; Zincir Restoran</span>
+                        </div>
+                        <span class="exp-action">
+                            <span>Fotoğraf &amp; Harita</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.7" aria-hidden="true">
+                                <path d="M7 17L17 7M17 7H8M17 7v9" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DENEYİM DETAY & HARİTA MODALI ===== -->
+        <div class="exp-modal" id="expModal" role="dialog" aria-modal="true" aria-labelledby="expModalTitle"
+            aria-hidden="true">
+            <div class="exp-modal-backdrop" id="expModalBackdrop"></div>
+
+            <div class="exp-modal-card">
+                <button type="button" class="exp-modal-close" id="expModalClose" aria-label="Pencereyi Kapat">
+                    ✕
+                </button>
+
+                <div class="modal-media-stage">
+                    <div class="view-switcher" role="tablist" aria-label="Görünüm Modu">
+                        <button type="button" class="switch-btn active" id="btnPhotoView" role="tab"
+                            aria-selected="true">
+                            Mekân Fotoğrafı
+                        </button>
+                        <button type="button" class="switch-btn" id="btnMapView" role="tab" aria-selected="false">
+                            Haritada Göster
+                        </button>
+                    </div>
+
+                    <div class="stage-photo active" id="stagePhoto">
+                        <img src="" alt="" id="expModalImg" />
+                        <span class="stage-badge" id="expModalCategory"></span>
+                    </div>
+
+                    <div class="stage-map" id="stageMap">
+                        <iframe id="expModalMapFrame" title="Mekân Haritası" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-head">
+                        <span class="modal-kicker" id="expModalLocation"></span>
+                        <h3 class="modal-title" id="expModalTitle"></h3>
+                    </div>
+
+                    <p class="modal-desc" id="expModalDesc"></p>
+
+                    <div class="address-box">
+                        <div class="address-info">
+                            <span class="address-label">ADRES</span>
+                            <p class="address-text" id="expModalAddress"></p>
+                        </div>
+                        <div class="address-actions">
+                            <button type="button" class="map-toggle-cta" id="quickMapBtn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" aria-hidden="true">
+                                    <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z" />
+                                    <circle cx="12" cy="11" r="2.2" />
+                                </svg>
+                                <span id="quickMapBtnText">Haritada Göster</span>
+                            </button>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="external-map-link"
+                                id="expModalExternalMap">
+                                Google Haritalar ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 4. BÖLÜM: EĞİTİM ===== -->
+        <section class="section education-section" id="egitim">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-index">
+                        <span>04</span>
+                        <span class="index-line"></span>
+                        <span>EĞİTİM</span>
+                    </div>
+                    <h2 class="section-title">
+                        Akademik Temel &amp; <span>Uzmanlık Alanı</span>
+                    </h2>
+                </div>
+
+                <article class="edu-showcase reveal">
+                    <div class="edu-primary">
+                        <div class="edu-badges">
+                            <span class="edu-pill gold-pill">LİSANS</span>
+                            <span class="edu-pill">3. SINIF · DEVAM EDİYOR</span>
+                        </div>
+
+                        <h3 class="edu-university">
+                            Muğla Sıtkı Koçman Üniversitesi
+                        </h3>
+                        <p class="edu-department">
+                            Yiyecek ve İçecek İşletmeciliği
+                        </p>
+
+                        <p class="edu-summary">
+                            Gastronomi, yiyecek-içecek operasyonları, hizmet kalitesi ve
+                            işletme yönetimi alanlarında teorik bilgiyi saha deneyimiyle
+                            birleştiren lisans eğitimi.
+                        </p>
+
+                        <div class="edu-tags">
+                            <span>Gastronomi</span>
+                            <span>Servis &amp; Operasyon</span>
+                            <span>Misafir Memnuniyeti</span>
+                            <span>İşletme Yönetimi</span>
+                        </div>
+                    </div>
+
+                    <div class="edu-sidebar">
+                        <div class="edu-meta-top">
+                            <span class="edu-kicker">AKADEMİK İLERLEME</span>
+                            <span class="edu-year-badge">3 / 4 Yıl</span>
+                        </div>
+
+                        <ol class="edu-steps" aria-label="Lisans sınıf ilerlemesi">
+                            <li class="edu-step completed">
+                                <span class="step-dot"></span>
+                                <div>
+                                    <strong>1. Sınıf</strong>
+                                    <small>Tamamlandı</small>
+                                </div>
+                            </li>
+                            <li class="edu-step completed">
+                                <span class="step-dot"></span>
+                                <div>
+                                    <strong>2. Sınıf</strong>
+                                    <small>Tamamlandı</small>
+                                </div>
+                            </li>
+                            <li class="edu-step current">
+                                <span class="step-dot"></span>
+                                <div>
+                                    <strong>3. Sınıf</strong>
+                                    <small>Aktif Öğrenci</small>
+                                </div>
+                            </li>
+                            <li class="edu-step upcoming">
+                                <span class="step-dot"></span>
+                                <div>
+                                    <strong>4. Sınıf</strong>
+                                    <small>Mezuniyet Yılı</small>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <div class="edu-location">
+                            <span class="edu-kicker">KONUM</span>
+                            <strong>Menteşe · Muğla, Türkiye</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== 5. BÖLÜM: SERTİFİKALAR ===== -->
+        <section class="section certificates-section" id="sertifikalar">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-index">
+                        <span>05</span>
+                        <span class="index-line"></span>
+                        <span>SERTİFİKALAR</span>
+                    </div>
+                    <h2 class="section-title">
+                        Mesleki Belgeler &amp; <span>Yetkinlikler</span>
+                    </h2>
+                </div>
+
+                <div class="cert-grid">
+                    <article class="cert-card reveal">
+                        <div class="cert-top">
+                            <div class="cert-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <path d="M9 12l2 2 4-4" />
+                                </svg>
+                            </div>
+                            <span class="cert-num">01</span>
+                        </div>
+
+                        <span class="cert-category">GIDA &amp; SERVİS GÜVENLİĞİ</span>
+                        <h3 class="cert-title">Hijyen Belgesi</h3>
+                        <p class="cert-desc">
+                            Gıda üretimi, servis ve konaklama alanlarında zorunlu sanitasyon
+                            ve hijyen standartlarına uygunluk yetkinliği.
+                        </p>
+
+                        <div class="cert-foot">
+                            <span class="cert-status"><i></i> Onaylı Belge</span>
+                            <span class="cert-area">Sektörel</span>
+                        </div>
+                    </article>
+
+                    <article class="cert-card reveal">
+                        <div class="cert-top">
+                            <div class="cert-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path
+                                        d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z" />
+                                    <line x1="6" y1="17" x2="18" y2="17" />
+                                </svg>
+                            </div>
+                            <span class="cert-num">02</span>
+                        </div>
+
+                        <span class="cert-category">MUTFAK &amp; GASTRONOMİ</span>
+                        <h3 class="cert-title">Aşçı Çırağı Belgesi</h3>
+                        <p class="cert-desc">
+                            Temel mutfak hazırlığı, ekipman kullanımı ve profesyonel mutfak
+                            işleyişine yönelik uygulamalı yeterlilik belgesi.
+                        </p>
+
+                        <div class="cert-foot">
+                            <span class="cert-status"><i></i> Onaylı Belge</span>
+                            <span class="cert-area">Mutfak</span>
+                        </div>
+                    </article>
+
+                    <article class="cert-card reveal">
+                        <div class="cert-top">
+                            <div class="cert-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 8v4l2.5 2.5" />
+                                </svg>
+                            </div>
+                            <span class="cert-num">03</span>
+                        </div>
+
+                        <span class="cert-category">ÇALIŞMA GÜVENLİĞİ</span>
+                        <h3 class="cert-title">İş Sağlığı ve Güvenliği Belgesi</h3>
+                        <p class="cert-desc">
+                            İşletme içi risk önleme, acil durum farkındalığı ve güvenli
+                            çalışma ortamı standartları sertifikasyonu.
+                        </p>
+
+                        <div class="cert-foot">
+                            <span class="cert-status"><i></i> Onaylı Belge</span>
+                            <span class="cert-area">İSG</span>
+                        </div>
+                    </article>
+
+                    <article class="cert-card reveal">
+                        <div class="cert-top">
+                            <div class="cert-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path
+                                        d="M12 2c.5 3.5-2 5.5-2 8.5a4 4 0 0 0 8 0c0-2.5-1.5-4.5-2.5-6-.5 1.8-1.5 2.5-2.5 2.5.5-2 .5-3.5-1-5z" />
+                                    <path d="M8.5 14.5A5.5 5.5 0 0 0 12 22a5.5 5.5 0 0 0 5.5-5.5" />
+                                </svg>
+                            </div>
+                            <span class="cert-num">04</span>
+                        </div>
+
+                        <span class="cert-category">TEKNİK YETKİNLİK</span>
+                        <h3 class="cert-title">
+                            Katı Sıvı Doğalgaz Yakıtlı Kalorifer Ateşçisi Sertifikası
+                        </h3>
+                        <p class="cert-desc">
+                            Tesis ve işletmelerde ısıtma sistemlerinin güvenli işletimi ve
+                            teknik kontrolüne yönelik resmi sertifika.
+                        </p>
+
+                        <div class="cert-foot">
+                            <span class="cert-status"><i></i> Onaylı Belge</span>
+                            <span class="cert-area">Teknik</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 6. BÖLÜM: GALERİ ===== -->
+        <section class="section gallery-section" id="galeri">
+            <div class="container">
+                <div class="gallery-head reveal">
+                    <div class="section-header">
+                        <div class="section-index">
+                            <span>06</span>
+                            <span class="index-line"></span>
+                            <span>GALERİ</span>
+                        </div>
+                        <h2 class="section-title">
+                            Kareler &amp; <span>Videolar</span>
+                        </h2>
+                    </div>
+
+                    <div class="gallery-tabs" role="tablist" aria-label="Galeri Kategorileri">
+                        <button type="button" class="gallery-tab active" data-tab="photos" role="tab"
+                            aria-selected="true">
+                            Fotoğraflar
+                        </button>
+                        <button type="button" class="gallery-tab" data-tab="videos" role="tab" aria-selected="false">
+                            Videolar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 1. KISIM: FOTOĞRAFLAR (10 Ham Görsel) -->
+                <div class="gallery-panel active" id="panel-photos" role="tabpanel">
+                    <div class="photo-grid">
+                        <button type="button" class="media-tile tile-tall reveal" data-type="image"
+                            data-src="images/galeri-6.jpeg">
+                            <img src="images/galeri-6.jpeg" alt="Galeri fotoğrafı 1" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-fides2.jpeg">
+                            <img src="images/galeri-fides2.jpeg" alt="Galeri fotoğrafı 2" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-fides3.PNG">
+                            <img src="images/galeri-fides3.PNG" alt="Galeri fotoğrafı 3" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile tile-wide reveal" data-type="image"
+                            data-src="images/galeri-fides4.jpeg">
+                            <img src="images/galeri-fides4.jpeg" alt="Galeri fotoğrafı 4" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-5.jpeg">
+                            <img src="images/galeri-5.jpeg" alt="Galeri fotoğrafı 5" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-fides1.jpeg">
+                            <img src="images/galeri-fides1.jpeg" alt="Galeri fotoğrafı 6" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-7.jpeg">
+                            <img src="images/galeri-7.jpeg" alt="Galeri fotoğrafı 7" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-8.jpeg">
+                            <img src="images/galeri-8.jpeg" alt="Galeri fotoğrafı 8" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri-9.jpeg">
+                            <img src="images/galeri-9.jpeg" alt="Galeri fotoğrafı 9" loading="lazy" />
+                        </button>
+                        <button type="button" class="media-tile reveal" data-type="image"
+                            data-src="images/galeri10.jpeg">
+                            <img src="images/galeri10.jpeg" alt="Galeri fotoğrafı 10" loading="lazy" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. KISIM: VİDEOLAR (kv1, kv2, kv3 — Kapak Otomatik 1. Saniyeden) -->
+                <div class="gallery-panel" id="panel-videos" role="tabpanel">
+                    <div class="video-grid">
+                        <button type="button" class="media-tile video-tile" data-type="video" data-src="videos/kv1.mp4">
+                            <video src="videos/kv1.mp4#t=1" preload="metadata" muted playsinline></video>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <button type="button" class="media-tile video-tile" data-type="video" data-src="videos/kv2.mp4">
+                            <video src="videos/kv2.mp4#t=1" preload="metadata" muted playsinline></video>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <button type="button" class="media-tile video-tile" data-type="video" data-src="videos/kv3.mp4">
+                            <video src="videos/kv3.mp4#t=1" preload="metadata" muted playsinline></video>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LIGHTBOX (FOTOĞRAF & VİDEO) ===== -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+            <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Kapat">✕</button>
+            <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Önceki">‹</button>
+            <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Sonraki">›</button>
+
+            <div class="lightbox-stage">
+                <img src="" alt="" id="lbImage" class="lb-media" />
+                <video id="lbVideo" class="lb-media" controls playsinline></video>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-monogram">KK</span>
+                <div>
+                    <strong>Kenan Karagöz</strong>
+                    <small>Yiyecek &amp; İçecek İşletmeciliği</small>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="mailto:kenankrgz4454@gmail.com">kenankrgz4454@gmail.com</a>
+                <a href="tel:+905347350238">+90 534 735 0238</a>
+            </div>
+
+            <a href="#anasayfa" class="back-top" aria-label="Yukarı çık">↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
